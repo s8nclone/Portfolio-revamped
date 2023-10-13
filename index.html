@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./stylesheet/style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav class="top-nav">
                 <div class="nav_home_btn">
                     <a href="#home">ABDULMUIZ FARAYOLA</a>
@@ -40,11 +40,185 @@
             </nav>
         </header>
 
-        <section>
+        <section id="hero">
             <div class="hero_container">
                 <p class="hero_paragraph">I am <span class="myName">Dayo</span>, a FrontEnd Developer who writes clean and efficient code to solve daily needs</p>
-                <button class="hireMe_btn">Hire Me</button>
+                <!-- <button class="hireMe_btn">Hire Me</button> -->
+                <a href="https://drive.google.com/file/d/1Zro19VULN47hlowDUPq2JT179V3R-Avq/view?usp=sharing" 
+                        target="_blank"
+                > 
+                    <button class="hireMe_btn">Hire Me </button>
+                </a>
                 <button class="arrow_down"><img src="./images/double_arrow_down.svg" alt="arrow down" /></button>
+            </div>
+        </section>
+
+        <section id="tools">
+            <div class="tools_container">
+                <div class="tools_label"><h3>Tools I use:</h3></div>
+                <div class="dev_tools">
+                    <ul class="dev_tools_icons">
+                        <li><img class="tool_icon" src="images/icons8-html5.svg" alt="html icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-css3.svg" alt="css3 icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-javascript.svg" alt="javascript icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-react.svg" alt="reactjs icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-tailwindcss.svg" alt="tailwindcss icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-sass.svg" alt="sass icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-nextjs.svg" alt="nextjs icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-git.svg" alt="git icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-postman.png" alt="postman icon"/></li>
+                        <!-- <li><img class="tool_icon" src="images/icons8-django.svg" alt="django icon"/></li> -->
+                        <li><img class="tool_icon" src="images/icons8-python.svg" alt="python icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-bootstrap.svg" alt="bootstrap icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-postgresql.svg" alt="postgresql icon"/></li>
+                        <li><img class="tool_icon" src="images/icons8-typescript-36.png" alt="typescript icon"/></li>
+                        <!-- <li><img class="tool_icon" src="images/icons8-office-365.svg" alt="office365 icon"/></li> -->
+                        <li><img class="tool_icon" src="images/icons8-figma.svg" alt="figma icon"/></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about_container">
+                <div class="about_header"><h3>About</h3></div>
+                <div class="dp_container">
+                    <div class="dp_backdrop"></div>
+                    <img src="images/profilephoto.jpg" alt="display picture" class="dp_image"/>
+                </div>
+                <div class="about_content">
+                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.
+                        I specialize in crafting beautiful and interactive webapp and mobile application. <br/><br/>I have a passion for 
+                        creating seamless user experiences and ensuring that the apps I build are both visually appealing and highly functional.
+                        I like to code things from scratch, and enjoy bringing ideas to life in the browser.<br/><br/>
+                        I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                        Living, learning, & leveling up one day at a time.
+                    </p>
+                        
+                    <a href="https://drive.google.com/file/d/1Zro19VULN47hlowDUPq2JT179V3R-Avq/view?usp=sharing" 
+                        target="_blank"
+                    > 
+                        <button class="download-cv">Download My Résumé</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="works_container">
+                <div class="works_header">
+                    <h3>Works</h3>
+                    <p>Take a peek through my creative and problem solving skills through my projects.</p>
+                </div>
+                
+                <div class="portfolio_projects">
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/raven-photo.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-body">
+                                <h3 class="card-title">Raven&Macaw HMO</h3>
+                                <p class="card-text">A mock website for an HMO company. Built with ReactJs and SASS.</p>
+                                <div class="btn-primary">
+                                    <button class="btn"><a target="_blank" href="https://raven-and-macaw-hmo.vercel.app/" >view live</a></button>
+                                    <button class="btn"><a target="_blank" href="https://github.com/s8nclone/raven-and-macaw-hmo"><img class="btn_img" src="images/icons8-github.svg"/></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/danfo-photo.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-body">
+                                <h3 class="card-title">Danfo Wa Oo!</h3>
+                                <p class="card-text">A simple transportation mock website. Built with HTML5, CSS and JavaScript.</p>
+                                <div class="btn-primary">
+                                    <button class="btn"><a target="_blank" href="https://s8nclone.github.io/Danfo-wa/" >view live</a></button>
+                                    <button class="btn"><a target="_blank" href="https://github.com/s8nclone/Danfo-wa"><img class="btn_img" src="images/icons8-github.svg"/></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/svcc-photo.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-body">
+                                <h3 class="card-title">SVCC</h3>
+                                <p class="card-text">Website for a Tech conference that supports, login and CRUD operations. All actions built with NextJs.</p>
+                                <div class="btn-primary">
+                                    <button class="btn"><a target="_blank" href="https://svcctech.netlify.app/" >view live</a></button>
+                                    <button class="btn"><a target="_blank" href="https://github.com/s8nclone/svcc-tech-conference"><img class="btn_img" src="images/icons8-github.svg"/></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card last_card">
+                        <div class="card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/dashboard-photo.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-body">
+                                <h3 class="card-title">Admin Page</h3>
+                                <p class="card-text">A mock admin page. No functionality included. Built with HTML5, CSS and a sprinkle of TypeScript.</p>
+                                <div class="btn-primary">
+                                    <button class="btn"><a target="_blank" href="https://s8nclone.github.io/admin-page-demo/" >view live</a></button>
+                                    <button class="btn"><a target="_blank" href="https://github.com/s8nclone/admin-page-demo"><img class="btn_img" src="images/icons8-github.svg"/></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#"
+                        target="_blank"
+                > 
+                    <button class="view_more">View more <img src="images/arrow-forward.svg" alt="forward icon"/></button>
+                </a>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="testimonial_container owl-carousel owl-theme owl-loaded">
+                <div class="testimonial_header">
+                    <h3>Testimonial</h3>
+                    <p>People I've worked with has some nice things to says</p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="images fade">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem! Consequatur odio rerum tempore saepe dicta, a voluptate aliquid ducimus accusantium deserunt obcaecati atque esse voluptatibus quam mollitia nisi similique!"</blockquote>
+                        <h3>Imo Dozie</h3>
+                        <h5>CEO, ThriveAgric</h5>
+                    </div>
+                    <div class="images fade">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem! Consequatur odio rerum tempore saepe dicta, a voluptate aliquid ducimus accusantium deserunt obcaecati atque esse voluptatibus quam mollitia nisi similique!"</b>
+                        <h3>Imo Dozie</h3>
+                        <h5>CEO, ThriveAgric2</h5>
+                    </div>
+                    <div class="images fade">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem! Consequatur odio rerum tempore saepe dicta, a voluptate aliquid ducimus accusantium deserunt obcaecati atque esse voluptatibus quam mollitia nisi similique!"</blockquote>
+                        <h3>Imo Dozie</h3>
+                        <h5>CEO, ThriveAgric3</h5>
+                    </div>
+                       
+                    <!-- Previous and Next Buttons -->
+                    <!-- <a class="previous" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a> -->
+                </div>
+
+                <br>
+                 
+                 <!-- Navigation Dots-->
+                <div style="text-align:center">
+                    <span class="navigation-dot" onclick="currentSlide(1)"></span>
+                    <span class="navigation-dot" onclick="currentSlide(2)"></span>
+                    <span class="navigation-dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </section>
 

@@ -160,6 +160,280 @@
 .hero_container .arrow_down {
   background: transparent;
   border: none;
+  text-align: center;
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1, 1.1) translate(0px, 10px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.tools_container {
+  height: 8rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.tools_container .tools_label {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+.tools_container .dev_tools {
+  padding: 0 1px;
+}
+.tools_container .dev_tools .dev_tools_icons {
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 1.5rem 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.tools_container .dev_tools .dev_tools_icons::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+.tools_container .dev_tools .dev_tools_icons li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+.tools_container .dev_tools .dev_tools_icons li .tool_icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.about_container {
+  padding: 2.5rem 1.25rem;
+  background-color: #F0F0F0;
+}
+.about_container .about_header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.about_container .dp_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+.about_container .dp_container .dp_backdrop {
+  width: 15rem;
+  height: 15rem;
+  background-color: #0CA788;
+  position: absolute;
+}
+.about_container .dp_container .dp_image {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+}
+.about_container .about_content {
+  color: #3A3A3A;
+  padding: 1.25rem 0;
+}
+.about_container .about_content p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+.about_container .about_content a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.about_container .about_content a .download-cv {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #0CA788;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.works_container {
+  padding: 2.5rem 1.25rem;
+}
+.works_container .works_header {
+  text-align: center;
+}
+.works_container .works_header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.works_container .portfolio_projects {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.works_container .portfolio_projects .flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+.works_container .portfolio_projects .flip-card:hover .card-inner {
+  transform: rotateX(180deg);
+}
+.works_container .portfolio_projects .flip-card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s ease-in;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-front,
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-front {
+  border-radius: 1rem;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-front .card-img-top {
+  height: 250px;
+  width: 250px;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body {
+  background-color: #0CA788;
+  color: #fff;
+  transform: rotateX(180deg);
+  font-size: 1rem;
+  padding: 15% 0;
+  border-radius: 1rem;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body .btn-primary {
+  display: flex;
+  padding: 2px;
+  margin: 3px;
+  justify-content: space-between;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body .btn-primary .btn {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  width: 6rem;
+  margin-inline: 1rem;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body .btn-primary .btn a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body .btn-primary .btn a .btn_img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.works_container .portfolio_projects .flip-card .card-inner .flip-card-body .btn-primary .btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.works_container .portfolio_projects .last_card {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .works_container .portfolio_projects {
+    margin: 0 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .works_container .portfolio_projects {
+    margin: 0 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.works_container a {
+  text-decoration: none;
+}
+.works_container a .view_more {
+  background: #0CA788;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  margin: 1rem auto;
+}
+
+.testimonial_container {
+  padding: 1.25rem;
+  /* Slideshow container */
+  /* The dots/bullets/indicators */
+}
+.testimonial_container .carousel-container {
+  position: relative;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit seethrough */
+}
+.testimonial_container .carousel-container .fade {
+  width: 40rem;
+}
+.testimonial_container .carousel-container .previous, .testimonial_container .carousel-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.testimonial_container .carousel-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.testimonial_container .carousel-container .prev:hover, .testimonial_container .carousel-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.testimonial_container .navigation-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.testimonial_container .active, .testimonial_container .navigation-dot:hover {
+  background-color: #717171;
 }
 
 /*# sourceMappingURL=style.css.map */
